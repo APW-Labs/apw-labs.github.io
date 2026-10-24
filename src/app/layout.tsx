@@ -1,11 +1,16 @@
 import type { Metadata, Viewport } from "next";
+import { SITE_URL } from "@/lib/site";
 import "./globals.css";
 import React from "react";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "APW Labs — Open Source Engineering & Systems R&D",
   description:
     "An open-source research collective focused on AOSP systems, low-level reverse engineering, embedded systems, and scalable cross-platform software.",
+  alternates: {
+    canonical: "/",
+  },
   keywords: [
     "APW Labs",
     "Open Source",
@@ -20,7 +25,7 @@ export const metadata: Metadata = {
     title: "APW Labs — Open Source Engineering & Systems R&D",
     description:
       "An open-source research collective focused on AOSP systems, low-level reverse engineering, embedded systems, and scalable cross-platform software.",
-    url: "https://apwlabs.github.io",
+    url: SITE_URL,
     siteName: "APW Labs",
     type: "website",
   },
