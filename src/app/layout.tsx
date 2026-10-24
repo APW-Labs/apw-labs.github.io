@@ -3,9 +3,33 @@ import "./globals.css";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: 'APW Labs — Open Source. No Restrictions. No Deadlines.',
+  title: "APW Labs — Open Source Engineering & Systems R&D",
   description:
-    'APW Labs is an open-source engineering collective: Android systems, web & cloud, desktop tools and edge AI.',
+    "An open-source research collective focused on AOSP systems, low-level reverse engineering, embedded systems, and scalable cross-platform software.",
+  keywords: [
+    "APW Labs",
+    "Open Source",
+    "Android Development",
+    "AOSP",
+    "Systems Engineering",
+    "Embedded Systems",
+    "Software Architecture",
+  ],
+  authors: [{ name: "APW Labs Team" }],
+  openGraph: {
+    title: "APW Labs — Open Source Engineering & Systems R&D",
+    description:
+      "An open-source research collective focused on AOSP systems, low-level reverse engineering, embedded systems, and scalable cross-platform software.",
+    url: "https://apwlabs.github.io",
+    siteName: "APW Labs",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "APW Labs — Open Source Engineering & Systems R&D",
+    description:
+      "An open-source research collective focused on AOSP systems, low-level reverse engineering, and multi-platform software.",
+  },
 };
 
 export const viewport: Viewport = { themeColor: '#0a0a0f', width: 'device-width', initialScale: 1, viewportFit: 'cover' }
