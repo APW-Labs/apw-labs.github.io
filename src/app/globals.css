@@ -1044,3 +1044,71 @@ footer a:hover {
     display: none
   }
 }
+/* ── Globe (colours are editable here; countries live in src/data/globe.ts) ── */
+:root {
+  --globe-sea: #101018;
+  --globe-land: #2a2e3b;
+  --globe-edge: #3a4050;
+  --globe-grid: rgba(255, 255, 255, .06);
+  --globe-hi: #a78bfa;
+  --globe-hi-edge: #ddd0ff;
+}
+
+:root[data-theme="light"] {
+  --globe-sea: #ffffff;
+  --globe-land: #d9dad2;
+  --globe-edge: #9a9d93;
+  --globe-grid: rgba(10, 10, 10, .07);
+  --globe-hi: #7c3aed;
+  --globe-hi-edge: #4c1d95;
+}
+
+.globe-wrap {
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px
+}
+
+canvas.globe {
+  width: min(460px, 86vw);
+  aspect-ratio: 1;
+  cursor: grab;
+  touch-action: pan-y
+}
+
+canvas.globe:active {
+  cursor: grabbing
+}
+
+.globe-legend {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 22px;
+  font-size: 13px;
+  color: var(--dim)
+}
+
+.globe-legend li {
+  display: flex;
+  align-items: center;
+  gap: 8px
+}
+
+.globe-legend i {
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--globe-edge)
+}
+
+.globe-legend i.hi {
+  background: var(--globe-hi);
+  border-color: var(--globe-hi-edge)
+}
+
+.globe-legend i.land {
+  background: var(--globe-land)
+}

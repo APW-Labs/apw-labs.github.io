@@ -2,7 +2,7 @@ export type Member = { name: string; role: string; login: string }
 
 export const crew: Member[] = [
   { name: 'Shabd Vasudeva', role: 'Founder & CEO', login: 'ShabdVasudeva' },
-  { name: 'Sameer Al Sahab', role: 'Web & Design', login: 'SameerAlSahab' },
+  { name: 'Sameer Al Sahab', role: 'Reverse and Software Engineer', login: 'SameerAlSahab' },
   { name: 'Mandip Kumar Kanu', role: 'Android', login: 'MandipKumarKanu' },
   { name: 'Sid.', role: 'Systems', login: 'Burhanverse' },
   { name: 'AlcInt', role: 'Android', login: 'A1cInt' },

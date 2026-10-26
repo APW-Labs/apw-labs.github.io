@@ -5,6 +5,7 @@ import Ticker from '@/components/Ticker'
 import Stats from '@/components/Stats'
 import Domains from '@/components/Domains'
 import Stack from '@/components/Stack'
+import Globe from '@/components/Globe'
 import Principles from '@/components/Principles'
 import Contribute from '@/components/Contribute'
 import Members from '@/components/Members'
@@ -21,6 +22,7 @@ export default function Page() {
       <Stats />
       <Domains />
       <Stack />
+      <Globe />
       <Principles />
       <Contribute />
       <Members />
