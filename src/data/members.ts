@@ -19,5 +19,5 @@ export const crew: Member[] = [
   { name: 'ako256', role: 'Contributor', login: 'ako256' },
   { name: 'renyte8', role: 'Contributor', login: 'renyte8' },
   { name: 'satyampandya', role: 'Contributor', login: 'satyampandya' },
-  { name: 'shantanu2389', role: 'Contributor', login: 'shantanu2389' },
+  { name: 'Shantanu Mishra', role: 'Contributor', login: 'shantanu2389' },
 ];
